@@ -8,10 +8,15 @@ module.exports = function () {
     cb()
   }
   function onend(cb) {
-    source = source.replace(
-      /require\('plug\/(.*?)'\)/g,
-      "require('plug-modules').require('plug/$1')"
-    )
+    source = source
+      .replace(
+        /require\('plug\/(.*?)'\)/g,
+        "require('plug-modules').require('plug/$1')"
+      )
+      .replace(
+        /define\.amd/g,
+        'false'
+      )
     this.push(source)
     cb()
   }
