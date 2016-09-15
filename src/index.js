@@ -6,6 +6,9 @@ import getWaitingUsers from './getWaitingUsers'
 import getBannedUsers from './getBannedUsers'
 import getMutedUsers from './getMutedUsers'
 import getStaffUsers from './getStaffUsers'
+import getPlaylists from './getPlaylists'
+import getActivePlaylist from './getActivePlaylist'
+import getSelectedPlaylist from './getSelectedPlaylist'
 
 export {
   ROLE,
@@ -15,5 +18,8 @@ export {
   getWaitingUsers,
   getBannedUsers,
   getMutedUsers,
-  getStaffUsers
+  getStaffUsers,
+  getPlaylists,
+  getActivePlaylist,
+  getSelectedPlaylist
 }
