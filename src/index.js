@@ -1,9 +1,15 @@
-// force plug-modules import for browserify
-import 'plug-modules'
+import * as ROLE from './ROLE'
+import getUser from './getUser'
+import getUsers from './getUsers'
+import getBannedUsers from './getBannedUsers'
+import getMutedUsers from './getMutedUsers'
+import getStaffUsers from './getStaffUsers'
 
-export * as ROLE from './ROLE'
-export { default as getUser } from './getUser'
-export { default as getUsers } from './getUsers'
-export { default as getBannedUsers } from './getBannedUsers'
-export { default as getMutedUsers } from './getMutedUsers'
-export { default as getStaffUsers } from './getStaffUsers'
+export {
+  ROLE,
+  getUser,
+  getUsers,
+  getBannedUsers,
+  getMutedUsers,
+  getStaffUsers
+}
