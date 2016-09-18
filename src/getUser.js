@@ -1,5 +1,6 @@
 import users from 'plug/collections/users'
 import currentUser from 'plug/models/currentUser'
+import makeUser from './makeUser'
 
 /**
  * Find a single local user object.
@@ -8,8 +9,8 @@ import currentUser from 'plug/models/currentUser'
  */
 export default function getUser(id = null) {
   if (id === null || id === currentUser.get('id')) {
-    return currentUser.toJSON()
+    return makeUser(currentUser.toJSON())
   }
   let user = users.get(id)
-  return user ? user.toJSON() : null
+  return user ? makeUser(user.toJSON()) : null
 }
