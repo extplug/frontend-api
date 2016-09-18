@@ -12,6 +12,11 @@ import getSelectedPlaylist from './getSelectedPlaylist'
 import getBannedUsers from './getBannedUsers'
 import banUser from './banUser'
 import unbanUser from './unbanUser'
+import getRoom from './getRoom'
+import setRoomName from './setRoomName'
+import setRoomDescription from './setRoomDescription'
+import setRoomWelcomeMessage from './setRoomWelcomeMessage'
+import setMinChatLevel from './setMinChatLevel'
 
 export {
   BAN_REASON,
@@ -27,5 +32,10 @@ export {
   getSelectedPlaylist,
   getBannedUsers,
   banUser,
-  unbanUser
+  unbanUser,
+  getRoom,
+  setRoomName,
+  setRoomDescription,
+  setRoomWelcomeMessage,
+  setMinChatLevel
 }
