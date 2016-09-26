@@ -7,8 +7,10 @@ import getDJ from './getDJ'
 import getWaitingUsers from './getWaitingUsers'
 import getStaffUsers from './getStaffUsers'
 import getPlaylists from './getPlaylists'
+import getPlaylist from './getPlaylist'
 import getActivePlaylist from './getActivePlaylist'
 import getSelectedPlaylist from './getSelectedPlaylist'
+import getPlaylistMedia from './getPlaylistMedia'
 import getBannedUsers from './getBannedUsers'
 import banUser from './banUser'
 import unbanUser from './unbanUser'
@@ -31,8 +33,10 @@ export {
   getWaitingUsers,
   getStaffUsers,
   getPlaylists,
+  getPlaylist,
   getActivePlaylist,
   getSelectedPlaylist,
+  getPlaylistMedia,
   getBannedUsers,
   banUser,
   unbanUser,
