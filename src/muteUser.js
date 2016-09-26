@@ -1,4 +1,4 @@
-import MuteAction from 'plug/actions/bans/MuteAction'
+import MuteAction from 'plug/actions/mutes/MuteAction'
 import dispatchAction from './dispatchAction'
 import { ATTITUDE } from './MUTE_REASON'
 
