@@ -8,7 +8,7 @@ const meta = JSON.parse(readFileSync(path.join(__dirname, './package.json'), 'ut
 export default {
   entry: './src/index.js',
   format: 'cjs',
-  external: id => Object.keys(meta.dependencies).concat('plug')
+  external: id => Object.keys(meta.dependencies)
     .some(baseName => id.startsWith(baseName)),
   plugins: [
     babel({
@@ -21,7 +21,8 @@ export default {
       include: 'src/**.js'
     }),
     alias({
-      lodash: path.dirname(require.resolve('lodash-es'))
+      lodash: path.dirname(require.resolve('lodash-es')),
+      plug: path.dirname(require.resolve('plug-modules/es/plug/_contextRequire'))
     })
   ]
 }
