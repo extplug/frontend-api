@@ -6,6 +6,7 @@
     "rollup": "rollup -c rollup.config.js > index.js",
     "minify": "uglifyjs index.js -mco index.min.js",
     "build": "npm run rollup && npm run minify",
+    "test": "standard src/**/*.js rollup.config.js",
     "prepublish": "npm run build"
   },
   "devDependencies": {

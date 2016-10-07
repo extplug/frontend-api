@@ -6,7 +6,7 @@ import getUser from './getUser'
  *
  * @param {number|null} id
  */
-export default function getDJ() {
+export default function getDJ () {
   let dj = booth.get('currentDJ')
   return dj ? getUser(dj) : null
 }

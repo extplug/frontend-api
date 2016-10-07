@@ -7,7 +7,7 @@ import makeUser from './makeUser'
  *
  * @param {number|null} id - The user's ID.
  */
-export default function getUser(id = null) {
+export default function getUser (id = null) {
   if (id === null || id === currentUser.get('id')) {
     return makeUser(currentUser.toJSON())
   }
