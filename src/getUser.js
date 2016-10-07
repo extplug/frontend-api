@@ -5,7 +5,7 @@ import makeUser from './makeUser'
 /**
  * Find a single local user object.
  *
- * @param {number|null} id
+ * @param {number|null} id - The user's ID.
  */
 export default function getUser(id = null) {
   if (id === null || id === currentUser.get('id')) {

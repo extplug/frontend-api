@@ -1,7 +1,4 @@
-import assign from 'lodash/assign'
-import each from 'lodash/each'
-import partial from 'lodash/partial'
-import create from 'lodash/create'
+import { assign, create, each, partial } from 'underscore'
 
 export default function makeProto(obj, methods) {
   const proto = {}

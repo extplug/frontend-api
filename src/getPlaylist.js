@@ -1,4 +1,4 @@
-import find from 'lodash/find'
+import { findWhere } from 'underscore'
 import getPlaylists from './getPlaylists'
 
 export default function getPlaylist(id) {
