@@ -1,23 +1,26 @@
 {
   "name": "plug-more-api",
   "version": "0.0.0",
+  "browser": "index.min.js",
   "scripts": {
-    "browserify": "sh build/browserify.sh > index.js",
-    "rollup": "rollup -c rollup.config.js > rollup.js",
-    "build": "npm run rollup && npm run browserify"
+    "rollup": "rollup -c rollup.config.js > index.js",
+    "minify": "uglifyjs index.js -mco index.min.js",
+    "build": "npm run rollup && npm run minify",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.8.0",
     "babel-preset-es2015": "^6.14.0",
-    "browserify": "^11.2.0",
-    "deumdify": "^1.2.3",
     "rollup": "^0.35.11",
     "rollup-plugin-alias": "^1.2.0",
     "rollup-plugin-babel": "^2.6.1",
-    "through2": "^2.0.1"
+    "standard": "^8.2.0",
+    "through2": "^2.0.1",
+    "uglify-js": "^2.7.3"
   },
   "dependencies": {
-    "lodash-es": "^4.15.0",
-    "plug-modules": "^5.0.0"
+    "backbone": "1.1.2",
+    "plug-modules": "^5.0.0",
+    "underscore": "1.6.0"
   }
 }
