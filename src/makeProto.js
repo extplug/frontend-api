@@ -1,5 +1,8 @@
 import { assign, create, each, partial } from 'underscore'
 
+/**
+ * @api private
+ */
 export default function makeProto (obj, methods) {
   const proto = {}
   each(methods, (method, name) => {
