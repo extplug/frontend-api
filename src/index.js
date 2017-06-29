@@ -22,6 +22,8 @@ import setRoomName from './setRoomName'
 import setRoomDescription from './setRoomDescription'
 import setRoomWelcomeMessage from './setRoomWelcomeMessage'
 import setMinChatLevel from './setMinChatLevel'
+import sendChat from './sendChat'
+import deleteChat from './deleteChat'
 
 export {
   BAN_REASON,
@@ -47,5 +49,7 @@ export {
   setRoomName,
   setRoomDescription,
   setRoomWelcomeMessage,
-  setMinChatLevel
+  setMinChatLevel,
+  sendChat,
+  deleteChat
 }
