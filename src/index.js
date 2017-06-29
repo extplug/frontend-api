@@ -18,6 +18,8 @@ import getMutedUsers from './getMutedUsers'
 import muteUser from './muteUser'
 import unmuteUser from './unmuteUser'
 import getRoom from './getRoom'
+import getRoomHistory from './getRoomHistory'
+import getUserHistory from './getUserHistory'
 import setRoomName from './setRoomName'
 import setRoomDescription from './setRoomDescription'
 import setRoomWelcomeMessage from './setRoomWelcomeMessage'
@@ -46,6 +48,8 @@ export {
   muteUser,
   unmuteUser,
   getRoom,
+  getRoomHistory,
+  getUserHistory,
   setRoomName,
   setRoomDescription,
   setRoomWelcomeMessage,
