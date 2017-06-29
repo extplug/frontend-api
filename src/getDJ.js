@@ -2,9 +2,9 @@ import booth from 'plug/models/booth'
 import getUser from './getUser'
 
 /**
- * Find a single local user object.
+ * Find the current DJ.
  *
- * @param {number|null} id
+ * @return {User|null} The current DJ.
  */
 export default function getDJ () {
   let dj = booth.get('currentDJ')

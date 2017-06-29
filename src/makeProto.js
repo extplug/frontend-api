@@ -1,7 +1,9 @@
 import { assign, create, each, partial } from 'underscore'
 
 /**
- * @api private
+ * Define a prototype on an object.
+ *
+ * @private
  */
 export default function makeProto (obj, methods) {
   const proto = {}
